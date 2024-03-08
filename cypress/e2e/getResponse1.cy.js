@@ -6,6 +6,7 @@ describe('template spec', () => {
     //Expecting the response status code to be 200
     expect(response.status).to.eq(200)
     expect(body[0].name).to.be.a('string')
+    expect(body.length).to.be.greaterThan(1)
       })
    })
 })
